@@ -1,0 +1,205 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+}
+
+nav a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.socio {
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+}
+
+.bronze {
+    border-left: 8px solid #cd7f32;
+}
+
+.silver {
+    border-left: 8px solid #c0c0c0;
+}
+
+.gold {
+    border-left: 8px solid #ffd700;
+}
+
+.platinum {
+    border-left: 8px solid #00bcd4;
+}
+
+.livello {
+    background: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+
+.livello ul {
+    padding-left: 20px;
+}
+
+.livello li {
+    margin-bottom: 6px;
+}
+
+.auto {
+    background: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.auto img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 6px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.profilo {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.foto-socio {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.info-socio h2 {
+    margin-top: 0;
+}
+
+.badge {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* BADGE CON ICONE */
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* Icona */
+.badge::before {
+    content: "🏅";
+    font-size: 16px;
+}
+
+/* Colori badge */
+.bronze .badge {
+    background-color: #f3e0d0;
+    color: #8b5a2b;
+}
+
+.silver .badge {
+    background-color: #eeeeee;
+    color: #666666;
+}
+
+.gold .badge {
+    background-color: #fff4c2;
+    color: #b8860b;
+}
+
+.platinum .badge {
+    background-color: #e0f7fa;
+    color: #007c91;
+}
+
+/* TRANSIZIONI GENERALI */
+.badge,
+.foto-socio,
+.auto {
+    transition: all 0.3s ease;
+}
+
+/* HOVER BADGE */
+.badge:hover {
+    transform: scale(1.08);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* HOVER FOTO SOCIO */
+.foto-socio:hover {
+    transform: scale(1.05);
+}
+
+/* HOVER CARD AUTO */
+.auto:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero-text {
+    max-width: 800px;
+    margin: 0 auto 15px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.hero-cta a {
+    font-weight: bold;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.hero-logo {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.hero-logo img {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+}
